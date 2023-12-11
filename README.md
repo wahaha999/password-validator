@@ -1,4 +1,3 @@
-```markdown
 # React Password Validation App
 
 This Application provides a password validation component built with React, TypeScript, and Vite. It ensures robust password policies and matches user entries across two input fields.
