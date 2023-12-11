@@ -1,30 +1,45 @@
-# React + TypeScript + Vite
+```markdown
+# React Password Validation App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This Application provides a password validation component built with React, TypeScript, and Vite. It ensures robust password policies and matches user entries across two input fields.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Dual Input Validation**: Ensures that both password inputs match.
+- **Complexity Requirements**: Enforces a minimum length of 6 characters and requires at least one uppercase character, one lowercase character, one number, and one special character (`!@#$%^&*()_-+={[}]|:;"'<,>.`).
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+To install this library, clone the repository to your local machine:
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+git clone [repository-url]
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Then, navigate to the library directory and install dependencies:
+
+```bash
+cd [library-directory]
+npm install
+```
+
+## Usage
+
+To run this application, execute the following command:
+
+```bash
+npm run dev
+```
+
+
+## Validation
+
+The component will validate the password based on the following criteria:
+
+- Minimum length of 6 characters.
+- At least one uppercase character.
+- At least one lowercase character.
+- At least one number.
+- At least one special character (`!@#$%^&*()_-+={[}]|:;"'<,>.`).
+
+If the passwords in both input fields do not match or do not meet the complexity requirements, an appropriate error message will be displayed.
